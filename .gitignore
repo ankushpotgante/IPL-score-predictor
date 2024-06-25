@@ -1,0 +1,10 @@
+# Files
+*.csv
+*.json
+
+# Environments
+env/
+venv/
+myenv/
+.env/
+.venv/
