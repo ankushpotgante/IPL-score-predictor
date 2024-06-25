@@ -76,10 +76,12 @@ streamlit run app.py
 ``` bash
 IPL Score Predictor/
 ├── app.py               # Streamlit app script
+├── extract_data.py      # Data extraction script
+├── preprocess_data.py   # Data preprocessing script
 ├── train.py             # Model training script
 ├── transformer.joblib   # Trained column transformer pipeline
 ├── model.joblib         # Trained machine learning model
-├── ipl_data/            # Historical match data for training
+├── ipl_data.zip         # Historical match data for training
 ├── requirements.txt     # Python packages required
 └── README.md            # Project documentation
 
