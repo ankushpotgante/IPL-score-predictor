@@ -26,7 +26,12 @@ def main():
     venue = st.selectbox('Select Venue', venues)
     # inning = st.selectbox('Select Inning', ['1st Inning', '2nd Inning'])
     is_toss_winner = st.selectbox('Is Toss Winner?', ['Yes', 'No'])
-    toss_decision = st.selectbox('Toss Decision', ['Bat', 'Bowl', "NA"])
+
+    if is_toss_winner == "Yes" :
+        toss_decision = st.selectbox('Toss Decision', ['Bat', 'Bowl', "NA"])
+    else:
+        toss_decision = st.selectbox('Toss Decision', ["NA"])
+
     wickets = st.selectbox('Wickets in powerplay', list(range(12)))
     
 
